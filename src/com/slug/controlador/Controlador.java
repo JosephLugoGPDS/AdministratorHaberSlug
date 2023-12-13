@@ -46,6 +46,7 @@ public class Controlador implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == vista.btnListar) {
+
             limpiarTabla();
             listar(vista.tabla);
             nuevo();

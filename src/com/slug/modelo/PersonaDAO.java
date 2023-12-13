@@ -29,6 +29,7 @@ public class PersonaDAO {
                 datos.add(p);
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
         return datos;
     }
