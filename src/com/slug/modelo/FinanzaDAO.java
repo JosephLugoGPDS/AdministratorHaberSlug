@@ -22,12 +22,12 @@ public class FinanzaDAO {
             rs = ps.executeQuery();
             while (rs.next()) {
                 Finanza f = new Finanza();
-                f.setId(rs.getString("id"));
-                f.setMonto(rs.getString("monto"));
-                f.setFecha(rs.getString("fecha"));
-                f.setMetodoPago(rs.getString("metodoPago"));
-                f.setTipo(rs.getString("tipo"));
-                f.setComentarios(rs.getString("comentarios"));
+                f.setId(rs.getString(1));
+                f.setMonto(rs.getString(2));
+                f.setFecha(rs.getString(3));
+                f.setMetodoPago(rs.getString(4));
+                f.setTipo(rs.getString(5));
+                f.setComentarios(rs.getString(6));
                 datos.add(f);
             }
         } catch (Exception e) {
